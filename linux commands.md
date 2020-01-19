@@ -16,10 +16,10 @@ pwd
 #### change directory
 cd
 
-####binaries or run programs
+#### binaries or run programs
 /bin
 
-####boot files or boot loader, configuration of your machine
+#### boot files or boot loader, configuration of your machine
 /boot
 
 
@@ -35,31 +35,31 @@ d= directory
 x= execute
 l= link
 
-####root can do anything
+#### root can do anything
 
-####system logs
+#### system logs
 /var
 
-####create a file
+#### create a file
 touch fileName
 
-####to copy file
+#### to copy file
 cp from_file_you_want_to_copy file_to_you_want_to_copy
 
-####to check if files are not same
+#### to check if files are not same
 diff nameOftheFile nameOftheFile
 
-####remove files
+#### remove files
 rm nameOfTheFile
 rm -r remove directory and its all sub-directories
 
-####move files from A to B folder
+#### move files from A to B folder
 mv fileName folderName
 
-####move file to 1 level up
+#### move file to 1 level up
 cp nameOfFile ..
 
-####file permission
+#### file permission
 drwxrwxr-x
 There are in total 3 sections
 d=directory
@@ -71,54 +71,54 @@ there sequence never change, always same
 ####add permission to the file
 chmod + (rwx) nameoffile
 
-####add permission to the file only for user
+#### add permission to the file only for user
 chmod u+(rwx) nameoffile
 
-####add permission to the file for everyone
+#### add permission to the file for everyone
 chmod a+(rwx) nameoffile
 
-####add permission to the file for group
+#### add permission to the file for group
 chmod g+(rwx) nameoffile
 
-####memory commands
+#### memory commands
 free -m
 
-####disk free (human readable)
+#### disk free (human readable)
 df -h
 
-####disk free inode (capacity of file system to have number of files)
+#### disk free inode (capacity of file system to have number of files)
 df -i
 
-####process viewer
+#### process viewer
 htop
 
-####uptime of your pc
+#### uptime of your pc
 uptime
 
 
-####package managment
+#### package managment
 update repository
 sudo apt update
 
-search apt packages
+#### search apt packages
 apt search firefox
 
-install package
+#### install package
 sudo apt install nameofpackage
 sudo apt install apache2
 
-remove package
+#### remove package
 sudo apt uninstall nameofpackage
 sudo apt autoremove= remove dependent package
 
-manage system units
+#### manage system units
 systemctl status nameofpackage
 systemctl status apache2
 
-to check a specific port
+#### to check a specific port
 sudo lsof -i:22
 
-View logs
+#### View logs
 different logs have different logs permission
 
 head = first 10 logs
@@ -127,7 +127,7 @@ head -n 50
 
 ###Managing Users
 
-#####to see list of users
+##### to see list of users
 cat /etc/passwd
 vagrant:x:1000:1000:,,,:/home/vagrant:/bin/bash
 
@@ -135,36 +135,36 @@ x=password (but in another file)
 1000 and above are users
 under 1000 are systerm users
 
-to see hash password
+#### to see hash password
 sudo cat /etc/shadow
 
-users group
+#### users group
 cat /etc/group
 groups
 
-add user
+#### add user
 adduser nameOfUser
 
-to see user directory
+#### to see user directory
 ll /home
 
-login as a specific user
+#### login as a specific user
 su - nameOfuser
 
-login as sudo to a user's directory
+#### login as sudo to a user's directory
 sudo su - batman
 
-passwd to change that user's password
+#### passwd to change that user's password
 
 sudo passw username to change password
 
-####to login as root 
+#### to login as root 
 sudo su -
 
-####remove a user
+#### remove a user
 sudo userdel -r batman
 
-####create a group
+#### create a group
 sudo groupadd nameOfGroup
 
 ####adding yourself to a group
@@ -173,10 +173,10 @@ sudo usermod -aG nameOfGroup nameOfUser
 to check if you are member of a group
 groups nameOfUser
 
-####remove user from a group
+#### remove user from a group
 gpasswd -d nameOfUser nameOfGroup
 
-####remove a group
+#### remove a group
 sudo groupdel nameOfGroup
 
 
