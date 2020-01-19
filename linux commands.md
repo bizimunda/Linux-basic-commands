@@ -1,19 +1,19 @@
-####main list storage
+#### main list storage
 ls /
 
-####home directory
+#### home directory
 ls /home 
 
-####long list of storage
+#### long list of storage
 ls l / or ll
 
-####long list of home
+#### long list of home
 ls -l /home
 
-####print working directory
+#### print working directory
 pwd
 
-####change directory
+#### change directory
 cd
 
 ####binaries or run programs
