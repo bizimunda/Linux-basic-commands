@@ -36,10 +36,10 @@ x= execute
 l= link
 
 #### root can do anything
-
+---------------------------- ### System Log---------------------------------------------
 #### system logs
 /var
-
+---------------------------- ### File creating---------------------------------------------
 #### create a file
 touch fileName
 
@@ -68,7 +68,7 @@ rwx= group permission
 r-x= everybody else
 there sequence never change, always same
 
-####add permission to the file
+#### add permission to the file
 chmod + (rwx) nameoffile
 
 #### add permission to the file only for user
@@ -79,6 +79,9 @@ chmod a+(rwx) nameoffile
 
 #### add permission to the file for group
 chmod g+(rwx) nameoffile
+
+
+---------------------------- ### Memory Commands---------------------------------------------
 
 #### memory commands
 free -m
@@ -95,6 +98,8 @@ htop
 #### uptime of your pc
 uptime
 
+
+---------------------------- ### Package Managment---------------------------------------------
 
 #### package managment
 update repository
@@ -125,7 +130,9 @@ head = first 10 logs
 tail = last 10 logs
 head -n 50
 
-###Managing Users
+
+---------------------------- ### Managing users---------------------------------------------
+### Managing Users
 
 ##### to see list of users
 cat /etc/passwd
